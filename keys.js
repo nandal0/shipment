@@ -1,4 +1,7 @@
 module.exports={
-    MONGOURI:"mongodb+srv://sagar:U%40itQY%21gv9iv9mx@cluster0.rlfmb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    MONGOURI:"mongodb+srv://Admin123456:Admin123456@socialmediacluster.fivuvjj.mongodb.net/Hospital_API?",
     JWT_SECRET:"CRACKERNADNAL"
 }
+
+// mongodb+srv://sagar:<password>@cluster0.ianq3cy.mongodb.net/?retryWrites=true&w=majority
+// nandal

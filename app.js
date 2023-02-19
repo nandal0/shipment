@@ -16,10 +16,20 @@ mongoose.connection.on('error',(err)=>{
 })
 
 require('./models/user');
+require('./models/users');
 require('./models/post');
+require('./models/data');
+require('./models/place');
+require('./models/Shipment');
 app.use(express.json());
 app.use(require('./routes/auth'));
 app.use(require('./routes/post'));
+app.use(require('./routes/user'));
+app.use(require('./routes/data'));
+app.use(require('./routes/place'));
+app.use(require('./routes/shipment'))
+
+
 
 
 

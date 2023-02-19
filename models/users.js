@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
-const {ObjectId}=mongoose.Schema.Types;
+// const {ObjectId}=mongoose.Schema.Types;
 
-const userSchema=new mongoose.Schema({
+const usersSchema=new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -13,12 +13,15 @@ const userSchema=new mongoose.Schema({
         unique:true
     }
     ,
-    password:{
+    phone:{
         type:String,
         required:true
     },
-    follower:[{type:ObjectId,ref:"user"}],
-    following:[{type:ObjectId,ref:"user"}]
+    message:{
+        type:String,
+        required:true
+    },
+
 })
 
-mongoose.model("user",userSchema);
+mongoose.model("users",usersSchema);
